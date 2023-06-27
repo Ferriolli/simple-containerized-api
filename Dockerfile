@@ -5,6 +5,4 @@ COPY app.py app.py
 
 RUN pip install -r requirements.txt
 
-EXPOSE 8000:8000
-
 CMD ["uvicorn", "app:app", "--reload"]
